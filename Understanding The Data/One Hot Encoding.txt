@@ -1,0 +1,65 @@
+#Reshaping the Data
+print("---Before reshaping the Data---")
+print("Shape of X_train: {}".format(X_train.shape))
+print("Shape of y_train: {}".format(y_train.shape))
+print("Shape of X_test: {}".format(X_test.shape))
+print("Shape of y_test: {}".format(y_test.shape))
+print("-----------------------------------------")
+print()
+print("---After reshaping the Data---")
+X_train = X_train.reshape(60000, 28, 28, 1)
+X_test = X_test.reshape(10000, 28, 28, 1)
+print("Shape of X_train: {}".format(X_train.shape))
+print("Shape of y_train: {}".format(y_train.shape))
+print("Shape of X_test: {}".format(X_test.shape))
+print("Shape of y_test: {}".format(y_test.shape))
+print("-----------------------------------------")
+---Before reshaping the Data---
+Shape of X_train: (60000, 28, 28, 1)
+Shape of y_train: (60000,)
+Shape of X_test: (10000, 28, 28, 1)
+Shape of y_test: (10000,)
+-----------------------------------------
+
+---After reshaping the Data---
+Shape of X_train: (60000, 28, 28, 1)
+Shape of y_train: (60000,)
+Shape of X_test: (10000, 28, 28, 1)
+Shape of y_test: (10000,)
+----------------------------
+#Reshaping the Data
+print("---Before reshaping the Data---")
+print("Shape of X_train: {}".format(X_train.shape))
+print("Shape of y_train: {}".format(y_train.shape))
+print("Shape of X_test: {}".format(X_test.shape))
+print("Shape of y_test: {}".format(y_test.shape))
+print("-----------------------------------------")
+print()
+print("---After reshaping the Data---")
+X_train = X_train.reshape(60000, 28, 28, 1)
+X_test = X_test.reshape(10000, 28, 28, 1)
+print("Shape of X_train: {}".format(X_train.shape))
+print("Shape of y_train: {}".format(y_train.shape))
+print("Shape of X_test: {}".format(X_test.shape))
+print("Shape of y_test: {}".format(y_test.shape))
+print("-----------------------------------------")
+---Before reshaping the Data---
+Shape of X_train: (60000, 28, 28, 1)
+Shape of y_train: (60000,)
+Shape of X_test: (10000, 28, 28, 1)
+Shape of y_test: (10000,)
+-----------------------------------------
+
+---After reshaping the Data---
+Shape of X_train: (60000, 28, 28, 1)
+Shape of y_train: (60000,)
+Shape of X_test: (10000, 28, 28, 1)
+Shape of y_test: (10000,)
+-----------------------------------------
+#applying one hot encoding
+y_train = to_categorical(y_train)
+y_test = to_categorical(y_test)
+print("Shape of y_train: {}".format(y_train.shape))
+print("Shape of y_train: {}".format(y_test.shape))
+Shape of y_train: (60000, 10)
+Shape of y_train: (10000, 10)
